@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="As 15 perguntas para fazer antes de aceitar um sócio investidor: o dinheiro, o poder, a saída e o passivo. Com o alerta de cada resposta.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="15 perguntas antes de aceitar um sócio investidor">
+<meta property="og:description" content="Quase todo empresário negocia o preço da cota e assina o resto. O resto é o que define quem manda na empresa daqui a três anos.">
+<meta name="twitter:card" content="summary">
+<title>Antes do Sócio Entrar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+  /* Layout: documento de leitura em coluna única, quatro blocos numerados, alertas como nota de margem rebatida à esquerda */
+  :root {
+    --paper: #F2F3F1;
+    --surface: #FBFBFA;
+    --ink: #16202A;
+    --ink-soft: #4F5B66;
+    --rule: #D7DAD5;
+    --flag: #A32E1F;
+    --flag-wash: #F3E6E3;
+    --accent: #1F5C54;
+
+    --display: "Spectral", "Iowan Old Style", Georgia, serif;
+    --body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #14181B;
+      --surface: #1B2023;
+      --ink: #E9EAE7;
+      --ink-soft: #9CA5AA;
+      --rule: #2B3135;
+      --flag: #E08A79;
+      --flag-wash: #2A1F1D;
+      --accent: #63AB9E;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #14181B;
+    --surface: #1B2023;
+    --ink: #E9EAE7;
+    --ink-soft: #9CA5AA;
+    --rule: #2B3135;
+    --flag: #E08A79;
+    --flag-wash: #2A1F1D;
+    --accent: #63AB9E;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 0 72px;
+  }
+
+  /* ── Cabeçalho ── */
+  header {
+    padding-block: 48px 36px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+  h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(1.95rem, 7vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+    margin: 0 0 20px;
+  }
+  .standfirst {
+    font-size: 1.0625rem;
+    color: var(--ink-soft);
+    max-width: 34rem;
+    margin: 0;
+  }
+
+  /* ── Nota de abertura ── */
+  .lede {
+    padding-block: 32px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .lede p { margin: 0 0 14px; }
+  .lede p:last-child { margin-bottom: 0; }
+  .lede strong { font-weight: 600; }
+
+  /* ── Blocos ── */
+  .block { padding-block: 40px 8px; }
+  .block + .block { border-top: 1px solid var(--rule); }
+
+  .block-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .block-num {
+    font-family: var(--display);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    flex: none;
+  }
+  .block-head h2 {
+    font-family: var(--display);
+    font-size: clamp(1.3rem, 4.6vw, 1.6rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+    min-width: 0;
+  }
+  .block-note {
+    font-size: 0.875rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin: 0 0 4px;
+  }
+
+  /* ── Perguntas ── */
+  .q { padding-block: 26px; }
+  .q + .q { border-top: 1px dashed var(--rule); }
+
+  .q-title {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    margin: 0 0 10px;
+  }
+  .q-n {
+    font-family: var(--body);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--ink);
+    background: var(--rule);
+    border-radius: 2px;
+    padding: 2px 7px;
+    flex: none;
+    transform: translateY(-2px);
+  }
+  .q-title h3 {
+    font-family: var(--display);
+    font-size: 1.1875rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+    min-width: 0;
+  }
+  .q p {
+    margin: 0 0 12px;
+    color: var(--ink-soft);
+  }
+  .q p:last-of-type { margin-bottom: 14px; }
+  .q p strong { color: var(--ink); font-weight: 600; }
+
+  .flag {
+    border-left: 3px solid var(--flag);
+    background: var(--flag-wash);
+    padding: 11px 14px;
+    font-size: 0.9375rem;
+  }
+  .flag b {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--flag);
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  /* ── Erros ── */
+  .errors {
+    margin-top: 44px;
+    padding: 28px 24px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+  }
+  .errors h2 {
+    font-family: var(--display);
+    font-size: 1.3125rem;
+    font-weight: 600;
+    margin: 0 0 18px;
+  }
+  .errors ol {
+    margin: 0;
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .errors li { color: var(--ink-soft); }
+  .errors li strong { color: var(--ink); font-weight: 600; }
+
+  /* ── Captura ── */
+  .capture {
+    margin-top: 44px;
+    padding: 28px 24px;
+    border: 2px solid var(--ink);
+    background: var(--surface);
+  }
+  .capture h2 {
+    font-family: var(--display);
+    font-size: 1.3125rem;
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+  .capture > p {
+    margin: 0 0 20px;
+    color: var(--ink-soft);
+    font-size: 0.9375rem;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  label {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  input[type="email"] {
+    flex: 1 1 13rem;
+    min-width: 0;
+    font-family: var(--body);
+    font-size: 16px;
+    color: var(--ink);
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 12px 13px;
+  }
+  input[type="email"]:focus-visible,
+  button:focus-visible,
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  button {
+    flex: 0 0 auto;
+    font-family: var(--body);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--paper);
+    background: var(--ink);
+    border: 1px solid var(--ink);
+    border-radius: 2px;
+    padding: 12px 20px;
+    cursor: pointer;
+  }
+  button:hover { background: var(--accent); border-color: var(--accent); }
+  .form-note {
+    margin: 14px 0 0;
+    font-size: 0.8125rem;
+    color: var(--ink-soft);
+  }
+
+  /* ── Oferta ── */
+  .offer {
+    margin-top: 20px;
+    padding: 28px 24px;
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .offer .eyebrow { color: var(--paper); opacity: 0.6; }
+  .offer h2 {
+    font-family: var(--display);
+    font-size: clamp(1.3rem, 4.6vw, 1.625rem);
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  .offer p {
+    margin: 0 0 20px;
+    opacity: 0.78;
+    font-size: 0.9375rem;
+    max-width: 30rem;
+  }
+  .offer a {
+    display: inline-block;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--paper);
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 12px 22px;
+  }
+  .offer a:hover { background: var(--accent); color: var(--paper); }
+
+  footer {
+    margin-top: 40px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+    font-size: 0.8125rem;
+    color: var(--ink-soft);
+  }
+  footer p { margin: 0 0 8px; }
+  footer p:last-child { margin-bottom: 0; }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+<style>
+  :root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  img { max-width: 100%; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Material aberto &middot; Societário</p>
+    <h1>15 perguntas para fazer antes de aceitar um sócio investidor</h1>
+    <p class="standfirst">Organizadas em quatro blocos: o dinheiro, o poder, a saída e o passivo. Cada uma com o que ela revela e qual resposta deve acender o alerta.</p>
+  </header>
+
+  <section class="lede">
+    <p>Existe uma hora em que o empresário está mais vulnerável do que quando está perdendo dinheiro: <strong>quando está recebendo.</strong></p>
+    <p>Proposta na mesa, euforia, pressa, e do outro lado um advogado com minuta pronta. Quase todo mundo negocia o valor da cota com afinco e assina o resto do pacote sem ler. O resto do pacote é exatamente o que define quem manda na empresa daqui a três anos.</p>
+    <p>Estas são as perguntas. Faça todas, por escrito, <strong>antes de assinar qualquer coisa</strong> — inclusive memorando de entendimentos.</p>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <span class="block-num">BLOCO I</span>
+      <h2>O dinheiro</h2>
+    </div>
+    <p class="block-note">Onde ele entra e com qual preferência sai.</p>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">01</span><h3>O dinheiro entra na empresa ou compra a cota de um sócio atual?</h3></div>
+      <p>São coisas opostas. Em aumento de capital, o dinheiro vai para o caixa da empresa e você é diluído sem receber nada no bolso. Em compra de cota, o dinheiro vai para o sócio vendedor e o caixa da empresa não muda.</p>
+      <div class="flag"><b>Alerta</b>Proposta que não deixa isso explícito no primeiro parágrafo.</div>
+    </div>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">02</span><h3>Entra como capital social, mútuo conversível ou AFAC?</h3></div>
+      <p>Mútuo conversível é dívida que <em>pode</em> virar cota. Se a empresa não performar, pode permanecer dívida — e aí você tem um credor, não um sócio. AFAC tem tratamento contábil e tributário próprio, e precisa estar correto desde o lançamento.</p>
+      <div class="flag"><b>Alerta</b>&ldquo;A gente resolve a formalização depois.&rdquo;</div>
+    </div>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">03</span><h3>Qual o valuation e como ele foi calculado?</h3></div>
+      <p>Múltiplo de faturamento, múltiplo de EBITDA, fluxo de caixa descontado ou achismo de mercado? <strong>O método importa mais que o número</strong>, porque é o método que vai reger a próxima rodada e o preço da sua saída.</p>
+      <div class="flag"><b>Alerta</b>Valuation apresentado sem memória de cálculo.</div>
+    </div>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">04</span><h3>A distribuição de lucros é proporcional ou preferencial?</h3></div>
+      <p>Lucro preferencial significa que ele recebe antes de você, às vezes com retorno mínimo garantido. <strong>Você pode ter 70% da empresa e receber depois de quem tem 30%.</strong></p>
+      <div class="flag"><b>Alerta</b>Qualquer menção a retorno preferencial, dividendo prioritário ou preferência na distribuição sem o cálculo do efeito prático em reais.</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <span class="block-num">BLOCO II</span>
+      <h2>O poder</h2>
+    </div>
+    <p class="block-note">Quantas decisões saem da sua mão junto com o cheque.</p>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">05</span><h3>Sobre o que exatamente ele terá direito de veto?</h3></div>
+      <p>Veto é o mecanismo pelo qual um minoritário governa. Veto sobre contratação, sobre investimento, sobre novo endividamento, sobre abertura de filial — cada item da lista é uma decisão que deixa de ser sua.</p>
+      <div class="flag"><b>Alerta</b>Lista de matérias de veto genérica ou aberta, do tipo &ldquo;matérias relevantes&rdquo;.</div>
+    </div>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">06</span><h3>O quórum de deliberação muda?</h3></div>
+      <p>Muita gente mantém a maioria das cotas e descobre tarde que o contrato passou a exigir unanimidade justamente para o que importa. Maioria de capital sem maioria de decisão não é controle.</p>
+      <div class="flag"><b>Alerta</b>Quórum qualificado introduzido no mesmo instrumento que formaliza a entrada dele.</div>
+    </div>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">07</span><h3>Ele terá assento em conselho e direito de informação periódica?</h3></div>
+      <p>Direito de informação é legítimo e normal. O problema é o custo operacional: relatório mensal auditado é despesa fixa nova, e obrigação sem prazo e sem formato definidos vira motivo de conflito.</p>
+      <div class="flag"><b>Alerta</b>Obrigação de relatório sem definir formato, periodicidade e quem paga.</div>
+    </div>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">08</span><h3>Ele pode investir no seu concorrente?</h3></div>
+      <p>Investidor costuma exigir não-concorrência <em>de você</em> e não oferecer nada em troca. Enquanto isso, seus números passam a circular dentro de uma estrutura que pode estar olhando o seu concorrente direto.</p>
+      <div class="flag"><b>Alerta</b>Cláusula de não-concorrência unilateral.</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <span class="block-num">BLOCO III</span>
+      <h2>A saída</h2>
+    </div>
+    <p class="block-note">O bloco que quase ninguém lê, e o que mais gera litígio.</p>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">09</span><h3>Existe tag along? Existe drag along?</h3></div>
+      <p><strong>Tag along</strong> te protege: se ele vender, você pode vender nas mesmas condições. <strong>Drag along</strong> te obriga: se ele vender, você é arrastado para a venda. Uma é escudo, a outra é coleira. Elas aparecem juntas, com nomes parecidos, no mesmo artigo.</p>
+      <div class="flag"><b>Alerta</b>Drag along com percentual baixo de acionamento.</div>
+    </div>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">10</span><h3>Se ele quiser sair em dois anos, a empresa é obrigada a recomprar?</h3></div>
+      <p>Cláusula de recompra transforma investimento em dívida com prazo. Se o acionamento cair num ano ruim, você recompra com dinheiro que não tem — e normalmente é exatamente no ano ruim que ele quer sair.</p>
+      <div class="flag"><b>Alerta</b>Opção de venda com preço mínimo garantido ou corrigido por índice.</div>
+    </div>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">11</span><h3>E se <em>você</em> quiser vender a empresa — ele pode travar?</h3></div>
+      <p>Direito de preferência mal redigido congela a venda por meses e espanta comprador sério. O comprador vai embora antes de o prazo correr.</p>
+      <div class="flag"><b>Alerta</b>Prazo de exercício de preferência superior a 30 dias.</div>
+    </div>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">12</span><h3>Como se avalia a cota no dia da saída?</h3></div>
+      <p>Tem que estar definido <strong>antes</strong>: critério de avaliação, quem avalia, quem paga o avaliador, prazo de pagamento e parcelamento. O que não estiver escrito agora será discutido no pior momento possível.</p>
+      <div class="flag"><b>Alerta</b>&ldquo;Valor de mercado a ser apurado na época.&rdquo;</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <span class="block-num">BLOCO IV</span>
+      <h2>O passivo</h2>
+    </div>
+    <p class="block-note">O que já existia antes dele e quem vai pagar.</p>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">13</span><h3>Quem responde pelo passivo anterior à entrada dele?</h3></div>
+      <p>Sem cláusula de indenização delimitada, você responde por tudo que aconteceu antes — e ele se beneficia da empresa limpa que você pagou para limpar.</p>
+      <div class="flag"><b>Alerta</b>Ausência de cláusula de indenização com teto de valor e prazo de vigência.</div>
+    </div>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">14</span><h3>A empresa tem passivo oculto que a due diligence dele vai encontrar?</h3></div>
+      <p>Trabalhista é o mais comum: pejotização, horas extras, acúmulo de função. Descobrir na due diligence derruba o valuation ou mata o negócio. Descobrir antes permite precificar e negociar.</p>
+      <div class="flag"><b>Alerta</b>Você não sabe a resposta desta pergunta.</div>
+    </div>
+
+    <div class="q">
+      <div class="q-title"><span class="q-n">15</span><h3>O acordo de sócios será arquivado na Junta Comercial e averbado?</h3></div>
+      <p>Acordo que fica apenas entre as partes tem eficácia limitada perante terceiros. Arquivado e averbado, vincula — e é isso que o torna exigível quando alguém decide descumprir.</p>
+      <div class="flag"><b>Alerta</b>&ldquo;A gente deixa só assinado entre nós.&rdquo;</div>
+    </div>
+  </section>
+
+  <section class="errors">
+    <h2>Os três erros que custam mais caro</h2>
+    <ol>
+      <li><strong>Assinar memorando de entendimentos achando que não vincula.</strong> Dependendo da redação, vincula — e normalmente já fixa valuation e exclusividade de negociação antes de você ter lido o resto.</li>
+      <li><strong>Deixar o acordo de sócios para depois do dinheiro entrar.</strong> Depois que o dinheiro entra, seu poder de negociação é zero.</li>
+      <li><strong>Usar a minuta que o investidor trouxe.</strong> Ela foi escrita por quem defende ele. Toda cláusula omissa é omissa a favor de quem escreveu.</li>
+    </ol>
+  </section>
+
+  <section class="capture">
+    <h2>Decisão dissecada, uma por mês</h2>
+    <p>Uma decisão recente do STJ ou do TJMG sobre matéria societária, destrinchada em linguagem de empresário: o que foi decidido, por quê, e o que muda na prática para quem tem sócio.</p>
+    <form id="sub" novalidate>
+      <label for="email">Seu e-mail</label>
+      <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+      <button type="submit">Quero receber</button>
+    </form>
+    <p class="form-note" id="note">Sem frequência além disso. Para sair, basta responder pedindo.</p>
+  </section>
+
+  <section class="offer">
+    <p class="eyebrow">Se a negociação já começou</p>
+    <h2>O Raio-X Societário analisa a sua estrutura, não a estrutura em tese</h2>
+    <p>Você responde sobre a sua empresa e recebe o diagnóstico da sua situação: onde o patrimônio está exposto hoje, o que a entrada de um sócio muda nisso, e em que ordem resolver.</p>
+    <a href="#raiox">Ver como funciona</a>
+  </section>
+
+  <footer>
+    <p>Material educativo de caráter geral, elaborado para informar sobre riscos recorrentes em negociações societárias. Não constitui parecer e não substitui a análise do caso concreto, que depende dos documentos e das circunstâncias de cada empresa.</p>
+    <p>Alexandre B. Hayne &middot; Direito Empresarial</p>
+  </footer>
+
+</div>
+
+<script>
+  document.getElementById('sub').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = document.getElementById('email');
+    var note = document.getElementById('note');
+    if (!email.value || !email.checkValidity()) {
+      note.textContent = 'Confira o e-mail digitado.';
+      email.focus();
+      return;
+    }
+    note.textContent = 'Pré-visualização: na página publicada este campo grava o contato na lista do Brevo.';
+  });
+</script>
+
+</body>
+</html>
