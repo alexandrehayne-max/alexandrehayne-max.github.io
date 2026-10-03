@@ -1,0 +1,208 @@
+<title>Exclusão de Dados</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=Archivo:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --paper: #F2F3F1;
+    --surface: #FBFBFA;
+    --ink: #16202A;
+    --ink-soft: #4F5B66;
+    --rule: #D7DAD5;
+    --accent: #1F5C54;
+
+    --display: "Spectral", "Iowan Old Style", Georgia, serif;
+    --body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #14181B;
+      --surface: #1B2023;
+      --ink: #E9EAE7;
+      --ink-soft: #9CA5AA;
+      --rule: #2B3135;
+      --accent: #63AB9E;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #14181B;
+    --surface: #1B2023;
+    --ink: #E9EAE7;
+    --ink-soft: #9CA5AA;
+    --rule: #2B3135;
+    --accent: #63AB9E;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding-inline: 20px;
+    padding-block: 0 72px;
+  }
+
+  header {
+    padding-block: 48px 36px;
+    border-bottom: 2px solid var(--ink);
+  }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: var(--display);
+    font-size: clamp(30px, 6vw, 44px);
+    line-height: 1.12;
+    font-weight: 700;
+    margin: 0 0 16px;
+    letter-spacing: -0.01em;
+  }
+  .lede {
+    font-size: 17px;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  section {
+    padding-block: 32px;
+    border-bottom: 1px solid var(--rule);
+  }
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-family: var(--display);
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0 0 14px;
+  }
+
+  p { margin: 0 0 14px; }
+  p:last-child { margin-bottom: 0; }
+
+  ol, ul { margin: 0 0 14px; padding-left: 20px; }
+  li { margin-bottom: 10px; }
+  li:last-child { margin-bottom: 0; }
+
+  strong { font-weight: 600; }
+
+  .box {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    border-radius: 3px;
+    padding: 18px 20px;
+    margin: 0 0 14px;
+  }
+  .box p:last-child { margin-bottom: 0; }
+
+  a { color: var(--accent); }
+
+  .contato {
+    font-family: var(--display);
+    font-size: 17px;
+  }
+
+  footer {
+    padding-top: 32px;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Seus dados</p>
+    <h1>Exclusão de Dados</h1>
+    <p class="lede">Como pedir a eliminação dos dados tratados pela resposta automática do Instagram.</p>
+  </header>
+
+  <section>
+    <h2>Antes de mais nada: quase nada fica guardado</h2>
+    <p>
+      Vale começar pelo que costuma ser a resposta à dúvida de quem chega aqui.
+    </p>
+    <div class="box">
+      <p>
+        Quando você comenta a palavra-chave, o sistema lê o seu comentário, confere se a palavra está
+        ali e envia o material. <strong>Nada disso é gravado.</strong> O único registro que permanece
+        é o código técnico do comentário — algo como <code>17865799348089039</code>, sem nome, sem @
+        e sem o texto que você escreveu —, guardado por <strong>6 horas</strong> só para evitar que
+        você receba a mesma mensagem repetida. Depois disso, ele some sozinho.
+      </p>
+    </div>
+    <p>
+      Ou seja: na maior parte dos casos não há o que excluir, porque passadas 6 horas já não existe
+      registro algum do seu lado.
+    </p>
+  </section>
+
+  <section>
+    <h2>Se quiser a exclusão imediata</h2>
+    <p>
+      Escreva para <span class="contato"><strong>alexandre.hayne@gmail.com</strong></span> informando:
+    </p>
+    <ol>
+      <li>o seu <strong>@ do Instagram</strong>;</li>
+      <li>a <strong>data aproximada</strong> em que comentou;</li>
+      <li>a frase <strong>"solicito exclusão de dados"</strong>.</li>
+    </ol>
+    <p>
+      O pedido é atendido e respondido em até <strong>15 dias</strong>, conforme o art. 18 da
+      Lei nº 13.709/2018. Não é preciso justificar o pedido.
+    </p>
+  </section>
+
+  <section>
+    <h2>O comentário e a mensagem dentro do Instagram</h2>
+    <p>
+      O seu comentário e a mensagem que você recebeu continuam no Instagram, sob guarda da Meta,
+      como qualquer outra interação da plataforma. Esses dois itens estão no seu controle direto
+      e você pode removê-los sem depender de ninguém:
+    </p>
+    <ul>
+      <li>
+        <strong>O comentário:</strong> abra a publicação, deslize o seu comentário para o lado
+        e toque na lixeira.
+      </li>
+      <li>
+        <strong>A conversa:</strong> abra o Direct, deslize a conversa para o lado
+        e escolha excluir.
+      </li>
+    </ul>
+    <p>
+      Feito isso, não resta registro da interação em nenhum lugar.
+    </p>
+  </section>
+
+  <section>
+    <h2>Documento relacionado</h2>
+    <p>
+      O detalhamento completo de quais dados são tratados, com que base legal e por quanto tempo
+      está na <a href="https://alexandrehayne-max.github.io/privacidade/">Política de Privacidade</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p>Última atualização: 3 de outubro de 2026.</p>
+  </footer>
+
+</div>
